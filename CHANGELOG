@@ -1,3 +1,6 @@
+2017-01-20
+* Released v8.1.1, fixing an issue using prefill information with `Account.getUpdateUri`.
+
 2017-01-19
 * Released v8.1.0, adding support for Risk Headers on API calls.
 
