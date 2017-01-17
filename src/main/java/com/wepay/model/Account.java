@@ -165,7 +165,7 @@ public class Account extends WePayResource {
 		}
 
 		if (data.prefillInfo != null) {
-			params.put("prefill_info", KYCPrefillInfoData.buildPrefillInfo(data.prefillInfo));
+			params.put("prefill_info", data.prefillInfo.toJSON());
 		}
 
 		JSONObject object = new JSONObject(request("/account/get_update_uri", params, headerData));
